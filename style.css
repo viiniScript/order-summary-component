@@ -15,10 +15,123 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
 }
 
 body {
+    background: no-repeat top var(--Very-pale-blue) url('./images/pattern-background-desktop.svg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 100%;
     height: 100vh;
     font-size: 16px;
-    font-family: 'Red Hat Display', sans-serif;
+    padding: 1rem;
+    
+}
+
+.card {
+    background-color: white;
+    max-width: 416px;
+    border-radius: 1rem;
+    box-shadow: 3px 3px 10px lightgray, -3px -3px 10px lightgray;
+}
+
+.card-image {
+    width: 100%;
+}
+
+.card-image img {
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+    width: 100%;
+    height: 100%;
+}
+
+
+.card-content h1 {
+    margin: 2rem 0 1rem 0;
+    color: var(--Dark-blue);
+}
+
+.card-content > p {
+    text-align: center;
+}
+
+.plan-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Very-pale-blue);
+    border-radius: .8rem;
+    padding: 1.5rem 1rem;
+    margin: 2rem 0;
+}
+
+.agroup-icon-details {
+    display: flex;
+    align-items: center;
+    
+}
+
+.agroup-icon-details img {
+    margin-right: 1rem;
+}
+
+.plan-details-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-details a{
+    color: var(--Bright-blue);
+    font-weight: 600;
+    font-size: 90%;
+    transition: all 1s;
+}
+
+.plan-details a:hover{
+    color: var(--Dark-blue);
+    text-decoration: none;
+}
+
+.card-content button {
+    cursor: pointer;
+    color: white;
+    font-weight: 600;
+    background: var(--Bright-blue);
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+    border-radius: .8rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.2);
+    transition: background .3s;
+}
+
+.card-content button:hover {
+    background-color: #766CF1;
+}
+
+#cancel-order {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+    font-weight: 600;
+    font-size: .9rem;
+    margin-bottom: 2rem;
+    transition: color .3s;
+}
+
+#cancel-order:hover {
+    color: var(--Dark-blue);
 }
